@@ -1,0 +1,89 @@
+.sidebar{
+    &-main{
+        padding-top: $header-height;
+    }
+    &-menu{
+        display: flex;
+        flex-direction: column;
+    }
+    &-item{
+        display: flex;
+        justify-content: center;
+    }
+    &-link{
+        width: 72px;
+        height: 72px;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        margin-top: 4px;
+        color: $text-color;
+        transition: background-color .2s ease-in-out;
+        &:hover{
+            background-color: $light-gray-color;
+        }
+    }
+    &-name{
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-top: 6px;
+    }
+    &-icon{
+        font-size: 2rem;
+        transition: transform .3s ease-in-out;
+    }
+    &-active &-link{
+        background-color: $light-gray-color;
+    }
+    &-item:first-child &-link:hover{
+        background-color: transparent;
+    }
+    &-link &-more{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #1473e6;
+        color: $white-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover .sidebar-icon{
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+    }
+    &-dropdown-menu{
+        min-width: 200px;
+        border-radius: 10px;
+        flex-direction: column;
+        padding: 10px 0;
+        background-color: $white-color;
+        box-shadow: 0px 0px 15px -3px rgb(0,0,0,0.2);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        z-index: 9;
+    }
+    &-dropdown-item{
+        display: flex;
+        color: $text-color;
+        font-size: 1.6rem;
+        padding: 12px 20px;
+        cursor: pointer;
+        gap: 0 16px;
+        align-items: center;
+        transition: background-color .2s ease-in-out;
+        &:hover{
+            background-color: $light-gray-color;
+        }
+    }
+    &-item.active-dropdown #add-btn{
+        transform: rotate(45deg) scale(1.4);
+    }
+}
+#add-btn{
+    font-size: 2.6rem;
+}

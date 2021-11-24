@@ -1,0 +1,40 @@
+.trending{
+    &-item{
+        padding: 0 20px;
+    }
+    &-list{
+        position: relative;
+    }
+    &-link{
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    &-img{
+        padding-top: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+    &-heading{
+        margin: 20px 0 10px;
+        line-height: 3rem;
+        height: 6rem;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    &-desc__list{
+        display: flex;
+        gap: 0 25px;
+    }
+    &-desc__item{
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        font-size: 1.8rem;
+        color: $text-color;
+    }   
+}

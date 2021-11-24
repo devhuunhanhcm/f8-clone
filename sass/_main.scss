@@ -1,0 +1,12 @@
+.main-wrap{
+    display: flex;
+    min-height: 100vh;
+    .sidebar{
+        flex-shrink: 0;
+        height: 100vh;
+        width: $width-sidebar;
+    }
+    .content{
+        flex: 1;
+    }
+}

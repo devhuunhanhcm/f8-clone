@@ -1,0 +1,33 @@
+.footer{
+    &{  
+        z-index: 9999;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0px -10px 15px -3px rgba(0,0,0,0.1);
+        background-color: $white-color ;
+    }
+    &-main{
+        height: $footer-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-link{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $gray-color-thin;
+    }
+    &-img{
+        width: 20px;
+        height: 20px;
+        filter: grayscale(100%);
+    }
+    &-left,
+    &-right{
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+    }
+}

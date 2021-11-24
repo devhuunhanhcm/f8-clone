@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://fullstack.edu.vn/assets/icon/f8_icon.png">
+    <title>F8-Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid container">
+            <div class="header__main">
+                <div class="header__logo">
+                    <a href="#!" class="header-home">
+                        <img src="https://fullstack.edu.vn/assets/icon/f8_icon.png" alt="logo" class="header__img">
+                    </a>
+                    <a href="#!">
+                        <h4 class="header__heading">Học tập để đi làm</h4>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <ion-icon class="header__search-icon" name="search"></ion-icon>
+                    <input type="text" placeholder="Tìm kiếm,khóa học,bài viết,video..." class="header__input">
+                </div>
+                <div class="header__user">
+                    <a href="#!" class="btn btn-primary">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container-fluid main-wrap">
+            <aside class="sidebar">
+                <div class="sidebar-main">
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-item dropdown" data-dropdown>
+                            <a href="#!" class="sidebar-link">
+                                <div class="sidebar-more">
+                                    <ion-icon data-dropdown-btn class="sidebar-icon" name="add" id="add-btn"></ion-icon>
+                                </div>
+                            </a>
+                            
+                            <ul class="sidebar-dropdown-menu dropdown-menu">
+                                <li>
+                                    <a href="#!" class="sidebar-dropdown-item">
+                                        <ion-icon name="brush-sharp"></ion-icon>
+                                        <p>Viết Blog</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="sidebar-dropdown-item">
+                                        <ion-icon name="help-sharp"></ion-icon>
+                                        <p>Hỏi</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="sidebar-dropdown-item">
+                                        <ion-icon name="code-slash"></ion-icon>
+                                        <p>Viết code</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item sidebar-active">
+                            <a href="#!" class="sidebar-link">
+                                <ion-icon class="sidebar-icon" name="home"></ion-icon>
+                                <span class="sidebar-name">Home</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#!" class="sidebar-link">
+                                <ion-icon class="sidebar-icon" name="bulb"></ion-icon>
+                                <span class="sidebar-name">Học</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#!" class="sidebar-link">
+                                <ion-icon class="sidebar-icon" name="help-outline"></ion-icon>
+                                <span class="sidebar-name">Hỏi</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#!" class="sidebar-link">
+                                <ion-icon  class="sidebar-icon" name="newspaper-outline"></ion-icon>
+                                <span class="sidebar-name">Blog</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#!" class="sidebar-link">
+                                <ion-icon class="sidebar-icon" name="code-slash"></ion-icon>
+                                <span class="sidebar-name">Code</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="content">
+                <section class="slide-banner-wrap">
+                    <div class="slide-banner">
+                        <div class="slide-banner__item">
+                            <div class="slide-banner__item-wrap slide-banner-facebook">
+                                <div class="slide-banner__left">
+                                    <h2 class="slide-banner__heading">
+                                        <a href="https://www.facebook.com/groups/649972919142215" target="_blank" class="hero-heading">
+                                            f8 trên Facebook
+                                        </a>
+                                    </h2>
+                                    <p class="slide-banner__desc">F8 được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu thích lập trình F8 sẽ ở đó.</p>
+                                    <a href="https://www.facebook.com/groups/649972919142215" target="_blank"  class="btn btn-outline">Truy cập nhóm</a>
+                                </div>
+                                <div class="slide-banner__right">
+                                    <a href="https://www.facebook.com/groups/649972919142215" target="_blank"  class="slide-banner__right-link">
+                                        <img src="https://cdn.fullstack.edu.vn/f8-learning/banners/Banner_04_2.png" alt="banner" class="slide-banner__right-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-banner__item">
+                            <div class="slide-banner__item-wrap slide-banner-youtube">
+                                <div class="slide-banner__left">
+                                    <h2 class="slide-banner__heading">
+                                        <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw" target="_blank" class="hero-heading">
+                                            f8 trên Youtube
+                                        </a>
+                                    </h2>
+                                    <p class="slide-banner__desc">F8 được nhắc tới ở mọi nơi, ở đâu có cơ hội việc làm cho nghề IT và có những con người yêu thích lập trình F8 sẽ ở đó.</p>
+                                    <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw" target="_blank"  class="btn btn-outline">Truy cập kênh</a>
+                                </div>
+                                <div class="slide-banner__right">
+                                    <a href="https://www.youtube.com/channel/UCNSCWwgW-rwmoE3Yc4WmJhw" target="_blank"  class="slide-banner__right-link">
+                                        <img src="https://cdn.fullstack.edu.vn/f8-learning/banners/Banner_03_youtube.png" alt="banner" class="slide-banner__right-img">
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="slide-banner__item">
+                            <div class="slide-banner__item-wrap slide-banner-group">
+                                <div class="slide-banner__left">
+                                    <h2 class="slide-banner__heading">
+                                        <a href="https://fullstack.edu.vn/blog/tong-hop-cac-san-pham-cua-hoc-vien-tai-f8.html" target="_blank" class="hero-heading">
+                                            Thành quả của thành viên
+                                        </a>
+                                    </h2>
+                                    <p class="slide-banner__desc">Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không là ngoại lệ.</p>
+                                    <a href="https://fullstack.edu.vn/blog/tong-hop-cac-san-pham-cua-hoc-vien-tai-f8.html" target="_blank"  class="btn btn-outline">Xem thành quả</a>
+                                </div>
+                                <div class="slide-banner__right">
+                                    <a href="https://fullstack.edu.vn/blog/tong-hop-cac-san-pham-cua-hoc-vien-tai-f8.html" target="_blank"  class="slide-banner__right-link">
+                                        <img src="https://cdn.fullstack.edu.vn/f8-learning/banners/Banner_01_2.png" alt="banner" class="slide-banner__right-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </section>
+                <section class="course">
+                    <p class="course-count"><span>115.373+</span> người khác đã học</p>
+                    <div class="heading">Khóa học nổi bật</div>
+                    <a href="#!" class="course-more more">Xem tất cả <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    <div class="course-list">
+                    </div>
+                </section>
+                <section class="blog">
+                    <div class=" heading">Bài viết nổi bật</div>
+                    <a href="#!" class="course-more more">Xem tất cả <ion-icon name="chevron-forward-outline"></ion-icon></a>
+
+                    <div class="blog-list"></div>
+                </section>
+                <section class="trending">
+                    <div class="heading">Video nổi bật</div>
+                    <a href="#!" class="course-more more">Xem tất cả <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    <div class="trending-list"></div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid container">
+            <div class="footer-main">
+                <div class="footer-left">
+                    <a href="#!" class="footer-logo">
+                        <img src="https://fullstack.edu.vn/assets/icon/f8_icon.png" alt="logo" class="footer-img">
+                    </a>
+                    <a href="#!" class="footer-link">Giới thiệu</a>
+                    <a href="#!" class="footer-link">Cơ hội việc làm</a>
+                </div>
+                <div class="footer-right">
+                    <a href="#!" class="footer-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#!" class="footer-link">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

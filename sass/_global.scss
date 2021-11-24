@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    font-family: $font-primary;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+.btn{
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    min-width: 110px;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    &-primary{
+        color: $white-color;
+        background-color: $primary-color;
+    }
+    &-outline{
+        color: $white-color;
+        background-color: transparent;
+        border: 2px solid $white-color;
+        border-radius: 16px;
+        padding: 4px 10px;
+    }
+}
+.dropdown{
+    position: relative;
+    &-menu{
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity .3s ease-in-out;
+    }
+    &.active-dropdown  &-menu{
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

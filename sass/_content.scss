@@ -1,0 +1,9 @@
+.content{
+    max-width: calc(100% - #{$width-sidebar});
+    padding: $header-height 40px 0 20px;
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: $footer-height + 50px;
+}
+
+

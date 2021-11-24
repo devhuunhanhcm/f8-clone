@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+input {
+    outline: none;
+    line-height: normal;
+}
+label,
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
